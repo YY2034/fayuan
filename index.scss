@@ -1,0 +1,196 @@
+body{
+  margin:0;
+  font-family: "微软雅黑",sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#header{
+  height: 44px;
+  background: #252934;
+  color:white;
+
+  .header-inner{
+    width: 1200px;
+    height: 44px;
+    margin:0 auto;
+  }
+
+  .info{
+    line-height: 44px;
+    h1{
+      cursor: pointer;
+      font-weight: normal;
+      font-size:14px;
+      float: left;
+
+      span{
+        margin-left:20px;
+        color:#ccc;
+      }
+    }
+  }
+
+  .control{
+    padding-top: 9px;
+    height: 35px;
+    float:right;
+    overflow: hidden;
+
+    input{
+      display: block;
+      border:none;
+      outline: none;
+      height: 23px;
+      line-height: 23px;
+      position: absolute;
+      top:1px;
+      right: 13px;
+      width:130px;
+      padding-left:8px;
+      font-size: 13px;
+      font-family: "微软雅黑",sans-serif;
+    }
+
+    .input-wrapper{
+      background: url("../images/top_input.png") no-repeat;
+      width: 170px;
+      height: 25px;
+      position: relative;
+      float: left;
+      overflow: hidden;
+      margin-right:8px;
+
+      span{
+        font-size: 0;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top:0;
+        left:3px;
+        z-index: 2;
+      }
+
+      .user{
+        background: url('../images/user.png') right center no-repeat;
+      }
+      .password{
+        background: url('../images/password.png') right center no-repeat;
+      }
+      .admin{
+        background: url('../images/admin.png') right center no-repeat;
+      }
+    }
+
+    .login{
+      float: left;
+      cursor:pointer;
+      width: 90px;
+      height: 28px;
+      line-height: 28px;
+      background:url('../images/login.png') no-repeat;
+      position: relative;
+
+      a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#banner{
+
+  position: relative;
+
+  .banner-inner{
+    min-width: 990px;
+    overflow: hidden;
+    margin:0 auto;
+  }
+
+  .banner-img{
+    line-height: 0;
+
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .sep-left,.sep-right{
+    position: absolute;
+    z-index:-3;
+    width: 50%;
+    height: 252px;
+    top:0;
+  }
+  .sep-left{
+    background: #c3090d;
+    left:0;
+  }
+  .sep-right{
+    background: #606eaa;
+    right:0;
+  }
+}
+
+#nav{
+  height: 76px;
+  background: #f4491c;
+  position: relative;
+  border-bottom:2px solid #f7b32a;
+
+  .nav-inner{
+    width: 1154px;
+    margin: 0 auto;
+    position: relative;
+  }
+  ul{
+    position: absolute;
+    height: 50px;
+    width: 1050px;
+    text-align: center;
+    line-height: 50px;
+    top:0;
+    right:0;
+    left:0;
+    margin:auto;
+
+    li{
+      float:left;
+      width: 95px;
+      height: 50px;
+      position: relative;;
+
+      a{
+        font-size: 15px;
+        text-decoration: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        color: #fff;
+      }
+      a.active{
+        background: url('../images/nav-li.png') center center no-repeat;
+      }
+      a:hover{
+        background: url('../images/nav-li.png') center center no-repeat;
+      }
+    }
+  }
+
+}
